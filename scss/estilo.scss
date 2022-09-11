@@ -1,0 +1,36 @@
+
+
+$color-principal: red;
+$tam-fuente: blue;
+$margen: 0px 15px;
+
+//1) ANIDAR SELECTORES
+//2) puedo trabajr con variables
+//3) puedo trabajar con archivos parciales.
+@import "variables";
+header {
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+h1 {
+    color: $color-principal;
+ }
+ nav {
+    background-color: beige;
+
+    li { display: inline-block};
+
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-left:15px ;
+        font-size: $tam-fuente;
+        &:hover {
+            background-color: white;
+        }
+    }
+ }
+}
